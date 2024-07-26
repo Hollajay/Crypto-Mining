@@ -1,0 +1,66 @@
+.navClasses{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+   
+
+}
+.navClasses ul{
+    width: 450px;
+    display: flex;
+    float: left;
+    justify-content: space-around;
+    z-index: 99;
+   
+  
+}
+.navClasses li{
+    transition: all .6s ease-in-out;
+}
+.navClasses li:hover{
+    color: var(--primary-color);
+    z-index: 99;
+}
+.logIn_Btn_div{
+    width:250px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.signIn_btn{
+width: 100px;
+height: 40px;
+  border-radius: .4rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--light-color);
+  margin-right: 1rem;
+  cursor: pointer;
+   z-index: 99;
+  
+}
+.signIn_btn:hover{
+    background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
+    border: none;
+    
+}
+.signUp_btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 0.4rem;
+    color: var(--light-color);
+    background: linear-gradient(to left, var(--primary-color) 40%, var(--secondary-color) 100%);
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+  }
+  
+  .signUp_btn:hover {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+  }
