@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import './nav.css'
 
 export const Nav = () => {
@@ -16,8 +17,8 @@ export const Nav = () => {
             <li>Supports</li>
         </ul>
         <div className="logIn_Btn_div">
-        <button className="signIn_btn">Sign In</button>
-        <button className="signUp_btn">Sign Up</button>
+       <Link to={'/login'}><button  className="signIn_btn">Sign In</button></Link> 
+      <Link to={'/signUp'}><button className="signUp_btn">Sign Up</button></Link>  
              
         </div>
     </nav>

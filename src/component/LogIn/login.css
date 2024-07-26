@@ -1,0 +1,124 @@
+.loginContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.loginSection_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.leftLoginSection{
+    width: 50%;
+    position: relative;
+}
+.LoginGradientBackground{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+}
+.HostingGradientBackground{
+    position:absolute;
+    left: 9.2rem;
+    bottom: 0;
+}
+.enviroGradientBackground{
+    position:absolute;
+    left: 4rem;
+    bottom: 1rem; 
+}
+.bubbleGradientBackground{
+    position:absolute;
+    left: 7rem;
+    bottom: .7rem; 
+   
+}
+
+
+
+
+                   /* right login section */
+.rightLoginSection{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.formFieldContainer{
+  width: 500px;
+  height: 400px;
+}
+.logo_div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo_div h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+.LoginInputField{
+    display:flex;
+    flex-direction: column; 
+    margin: 1rem 0;
+
+}
+.loginInput{
+    width: 500px;
+    height: 50px;
+    background-color: var(--blurdark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .6rem;
+}
+
+.LoginInputField input{
+width: 470px;
+height: 40px;
+background-color: transparent;
+border: none;
+outline: none;
+color: var(--light-color);
+font-size: 15px;
+}
+
+.LoginInputField label{
+    margin-bottom: .5rem;
+}
+.checkBox_div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.checkBoxInput_div{
+    display: flex;
+}
+.checkBoxInput{
+    width: 20px;
+    height: 20px;
+    background-color: var(--blurdark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkBoxInput input{
+width: 100%;
+height: 100%;
+}
+.LoginSignInBtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 0.4rem;
+    color: var(--light-color);
+    background: linear-gradient(to left, var(--primary-color) 40%, var(--secondary-color) 100%);
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+}
+.LoginSignInBtn:hover{
+    background: transparent;
+    border: 2px solid var(--primary-color);
+}
