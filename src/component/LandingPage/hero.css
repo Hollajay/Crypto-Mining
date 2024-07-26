@@ -394,6 +394,9 @@ margin: 1rem 0;
   background-color: transparent;
   border: none;
   outline: none;
+  z-index: 99;
+  color: var(--light-color);
+  font-size: 15px;
 }             
 
                             /* footer container  */
@@ -413,6 +416,7 @@ margin: 1rem 0;
 .footerTextContent_div{
   width: 350px;
   text-align: left;
+  z-index: 99;
   
 
 }
@@ -428,6 +432,7 @@ margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 99;
 }
 .footerInput_div input{
   width: 200px;
@@ -435,6 +440,8 @@ margin: 1rem 0;
   background-color: transparent;
   border: none;
   outline: none;
+  color: var(--light-color);
+  font-size: 15px;
 }  
 .footerList_div{
   line-height: 2.5;
