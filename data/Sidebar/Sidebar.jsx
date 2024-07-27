@@ -78,7 +78,7 @@ export const Sidebar = () => {
           ))
         }
       </section>
-      <main>{}</main>
+      
     </div>
   )
 }
