@@ -1,0 +1,78 @@
+.allListContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   color: white;
+   position: relative;
+   z-index: 99;
+   
+}
+.dashboardGradient1{
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    z-index: 0;
+}
+.dashboardGradient2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+.dashboardGradient2 img{
+    height: 95vh;
+}
+.sidebarSection{
+    color: var(--light-color);
+    width: 200px;
+    /* background-color: var(--blurdark-color); */
+    transition: all 0.5s; 
+    z-index: 99;
+}
+.sidebar_top_section{
+    display: flex;
+    align-items: center;
+    padding: 20px 15px ;
+}
+.sidebarLogo_text{
+    font-size: 30px;
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.sidebarList{
+    /* width: 100%;
+    height: 40px; */
+    padding: 10px 15px;
+    background: transparent;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--light-color);
+    transition: all 0.5s;
+}
+.active{
+    background: linear-gradient(to right, #1F8EBE40 0%, #440495 20%, #440495 60%,#B102CD);
+}
+.sidebarList:hover{
+    background: linear-gradient(to right, #1F8EBE40 0%, #440495 20%, #440495 60%,#B102CD);
+    width: 100%;
+}
+.sidebar_icon, sidebar_text{
+    font-size: 25px;
+}
+.sidebarList p{
+    width: 90px;
+    margin-left: 1rem;
+}
+.sidebarList:last-child{
+    margin-top: 4rem;
+}
