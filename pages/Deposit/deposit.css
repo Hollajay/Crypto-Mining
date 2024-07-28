@@ -1,0 +1,98 @@
+.deposit_container{
+    width: 100%;
+}
+.depositSection{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgba(25, 25, 25, 0.5);
+    border-radius: 1rem;
+}
+.depositContent_div{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.coinOptionInput_div{
+    width: 100%;
+    height: 60px;
+    border-radius: 1rem;
+    background-color: var(--blurdark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.depositSelectBar{
+    width: 90%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+   
+   
+}
+.depositSelectBar option{
+    height: 40px;
+    background-color: var(--blurdark-color);
+    border: none;
+}
+.depositBarCode_div{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   display: flex;    
+}
+.barCodeImage_div{
+    margin: 1rem 0;
+  
+}
+.barCodeImage_div img {
+    width: 180px;
+    height: 180px;
+}
+.generateDepositLink_div{
+    width: 100%;
+    height: 60px;
+    border-radius: 1rem;
+    background-color: var(--blurdark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.generateDepositLink_div input{
+width: 80%;
+height: 50px;
+background-color: transparent;
+border: none;
+outline: none;
+color: var(--light-color);
+font-size: 18px;
+}
+.depositTextContent{
+    text-align: center;
+    width: 90%;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+.deposiBtn{
+    width: 150px;
+    height: 40px;
+    border-radius: 0.4rem;
+    color: var(--light-color);
+    background: linear-gradient(to left, var(--primary-color) 40%, var(--secondary-color) 100%);
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+    margin: 1rem 0;
+}
+.deposiBtn:hover{
+    background: transparent;
+    border: 2px solid var(--primary-color);
+}

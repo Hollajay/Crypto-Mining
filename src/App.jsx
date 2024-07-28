@@ -25,9 +25,13 @@ function App() {
         <Route path='/' element={<Hero />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signUp' element={<SignUp />} />
-        
+        <Route path='/dashboard' element={
+          <Sidebar>
+          <Dashboard />
+          </Sidebar>
+          } />
         <Route path='/' element={<SidebarLayout />}>
-          <Route path='/dashboard' element={<Dashboard />} />
+         
           <Route path='/withdraw' element={<Withdraw />} />
           <Route path='/deposit' element={<Deposit />} />
           <Route path='/buyminer' element={<Buyminer />} />

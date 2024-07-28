@@ -10,6 +10,7 @@ import { RiArrowLeftRightFill } from "react-icons/ri";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { Header } from '../DashboardHeader/Header';
+import { Withdraw } from '../../pages/Withdraw/Withdraw';
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -56,7 +57,9 @@ export const Sidebar = () => {
     <div className='allListContainer'>
       <div className='dashboardGradient1'><img src="https://i.postimg.cc/7YvfYx3G/Group-4-1.png" alt="" /></div>
       <div className='dashboardGradient2'><img src="https://i.postimg.cc/7LLLQbkc/Group-5.png" alt="" /></div>
-        <Header/>
+      <Header/>
+       <div className='sidebarAndContent_div'>
+   
       <section style={{width: isOpen ? "250px" : "50px" }} className="sidebarSection">
         <div className='sidebar_top_section'>
           {/* <h1 style={{display: isOpen ? "block" : "none" }}  className='sidebarLogo_text'>logo</h1> */}
@@ -77,8 +80,10 @@ export const Sidebar = () => {
             </NavLink>
           ))
         }
+         
       </section>
-      
+       <Withdraw/>
+      </div>
     </div>
   )
 }
