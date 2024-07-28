@@ -10,7 +10,8 @@ import { RiArrowLeftRightFill } from "react-icons/ri";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { Header } from '../DashboardHeader/Header';
-import { Withdraw } from '../../pages/Withdraw/Withdraw';
+import { Dashboard } from '../../pages/Dashboard/Dashboard';
+
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -82,7 +83,7 @@ export const Sidebar = () => {
         }
          
       </section>
-       <Withdraw/>
+       <Dashboard/>
       </div>
     </div>
   )
