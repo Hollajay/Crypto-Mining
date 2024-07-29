@@ -24,7 +24,7 @@
   width: 10px;
 }
  /* Track */
- ::-webkit-scrollbar-track {
+ body::-webkit-scrollbar-track {
   background:rgba(0, 0, 0, 0.3);
 }
 

@@ -6,8 +6,9 @@ import { FaArrowRight } from "react-icons/fa";
 import { LuArrowUpRight } from "react-icons/lu";
 import ChartHero from './heroChart/ChartHero';
 
-export const Hero = () => {
 
+export const Hero = () => {
+         
       return (
        <div className='landingPageContainer'>
         

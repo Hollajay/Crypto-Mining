@@ -13,7 +13,7 @@
   }
   
   /* Track */
-  ::-webkit-scrollbar-track {
+  .dashboardSections ::-webkit-scrollbar-track {
     background:transparent;
   }
   

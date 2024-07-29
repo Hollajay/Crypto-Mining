@@ -1,10 +1,22 @@
 
 import { Link } from 'react-router-dom'
 import './nav.css'
+import { useState } from 'react'
 
 export const Nav = () => {
+  const [navbar, setNavbar] = useState(false)
+
+  const background_change = () =>{
+    if(window.scrollY >= 60) {
+     setNavbar(true);
+    }else{
+      setNavbar(false)
+    }
+  }
+
+  window.addEventListener("scroll", background_change)
   return (
-  <section className="navSection">
+  <section className={navbar ? "navSection nav_on_scroll" : "navSection"}>
     <nav className="navClasses">
         <div className="logoDiv">
             <h1>CRYPTO</h1>
