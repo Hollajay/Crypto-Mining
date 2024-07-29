@@ -279,6 +279,9 @@ width: 200px;
   color: var(--systemgreen-color);
   width: 100px;
 }
+.block5Percent_decrease{
+  color: rgb(255, 94, 0);
+}
 .block5Graph_list{
   width: 300px;
 }

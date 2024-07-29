@@ -143,7 +143,7 @@ export const Hero = () => {
                 <p className="block5Name_list">Wax</p>
                 <p className="block5Abbrev_list">WAXP</p>
                 <p className="block5Price_list">$58,950</p>
-                <p className="block5Percent_list">+1.68%</p>
+             <p className="block5Percent_list block5Percent_decrease">-2.59%</p>           {/*   i add a styling for the decrease market percent to only this for now  */}
                 <p className="block5Graph_list"><ChartHero/></p>
                 <div className="block5Trade_list"><p>Trade now</p><FaArrowRight /></div>
               </div>
