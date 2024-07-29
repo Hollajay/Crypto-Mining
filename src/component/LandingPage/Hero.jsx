@@ -4,6 +4,7 @@ import { Nav } from '../navBar/Nav'
 import './hero.css'
 import { FaArrowRight } from "react-icons/fa";
 import { LuArrowUpRight } from "react-icons/lu";
+import ChartHero from './heroChart/ChartHero';
 
 export const Hero = () => {
 
@@ -119,7 +120,7 @@ export const Hero = () => {
                 <p className="block5Abbrev_list">BTC</p>
                 <p className="block5Price_list">$58,950</p>
                 <p className="block5Percent_list">+1.68%</p>
-                <p className="block5Graph_list"></p>
+                <p className="block5Graph_list">  <ChartHero/></p>
                 <div className="block5Trade_list"><p>Trade now</p><FaArrowRight /></div>
               </div>
               <div className='block5TableLists'>
@@ -127,7 +128,7 @@ export const Hero = () => {
                 <p className="block5Abbrev_list">ETH</p>
                 <p className="block5Price_list">$58,950</p>
                 <p className="block5Percent_list">+1.68%</p>
-                <p className="block5Graph_list"></p>
+                <p className="block5Graph_list"><ChartHero/></p>
                 <div className="block5Trade_list"><p>Trade now</p><FaArrowRight /></div>
               </div>
               <div className='block5TableLists'>
@@ -135,7 +136,7 @@ export const Hero = () => {
                 <p className="block5Abbrev_list">ADA</p>
                 <p className="block5Price_list">$58,950</p>
                 <p className="block5Percent_list">+1.68%</p>
-                <p className="block5Graph_list"></p>
+                <p className="block5Graph_list"><ChartHero/></p>
                 <div className="block5Trade_list"><p>Trade now</p><FaArrowRight /></div>
               </div>
               <div className='block5TableLists'>
@@ -143,7 +144,7 @@ export const Hero = () => {
                 <p className="block5Abbrev_list">WAXP</p>
                 <p className="block5Price_list">$58,950</p>
                 <p className="block5Percent_list">+1.68%</p>
-                <p className="block5Graph_list"></p>
+                <p className="block5Graph_list"><ChartHero/></p>
                 <div className="block5Trade_list"><p>Trade now</p><FaArrowRight /></div>
               </div>
               <div className='block5TableLists'>
@@ -151,7 +152,7 @@ export const Hero = () => {
                 <p className="block5Abbrev_list">DOT</p>
                 <p className="block5Price_list">$8,780</p>
                 <p className="block5Percent_list">+1.68%</p>
-                <p className="block5Graph_list"></p>
+                <p className="block5Graph_list"><ChartHero/></p>
                 <div className="block5Trade_list"><p>Trade now</p><FaArrowRight />
                 <div className='gradientBackground'> <img src="https://i.postimg.cc/FHzGwNH7/bg-gradient-img.png" alt="gradentBackground" /></div></div>
               </div>
@@ -235,7 +236,7 @@ export const Hero = () => {
       </footer>
 
   
-
+      
        
        </div>
        
