@@ -4,6 +4,7 @@ import { Nav } from '../navBar/Nav'
 import './hero.css'
 import { FaArrowRight } from "react-icons/fa";
 import { LuArrowUpRight } from "react-icons/lu";
+
 export const Hero = () => {
 
       return (
@@ -235,7 +236,7 @@ export const Hero = () => {
 
   
 
-
+       
        </div>
        
      

@@ -19,8 +19,24 @@
   --blurdark-color:#1A1B23;
   --darkpurple-color:#898CA9;
 
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+ /* Track */
+ ::-webkit-scrollbar-track {
+  background:rgba(0, 0, 0, 0.3);
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:rgba(25, 25, 25, 0.3);
+  border-radius: .5rem;
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(25, 25, 25, 0.7);
 }
 li{
   list-style: none;
