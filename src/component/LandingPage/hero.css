@@ -358,6 +358,7 @@ z-index: 0;
                                         /* block 7 section */
 .block7Section{
   width: 100%;
+  z-index: 90;
 }    
 .block7Div_container{
   margin: 0 auto;
@@ -367,6 +368,7 @@ z-index: 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 90;
  
 }  
 .block7Text_div h1{
@@ -391,6 +393,7 @@ margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 90;
 }   
 .block7Input_div input{
   width: 200px;
@@ -401,6 +404,7 @@ margin: 1rem 0;
   z-index: 99;
   color: var(--light-color);
   font-size: 15px;
+
 }             
 
                             /* footer container  */
@@ -408,6 +412,7 @@ margin: 1rem 0;
   width: 100%;
   color: lightgray ;
   position: relative;
+  z-index: 99;
 }
 .footerSection{
   width: 80%;
@@ -446,10 +451,17 @@ margin: 1rem 0;
   outline: none;
   color: var(--light-color);
   font-size: 15px;
+  z-index: 9;
 }  
 .footerList_div{
   line-height: 2.5;
   text-align: left;
+  z-index: 9;
+}
+
+.footerlist:hover{
+  color:var(--primary-color);
+  text-decoration:underline ;
 }
 .termsOfPolicy_div{
   line-height: 2.5;
@@ -772,7 +784,8 @@ padding: 0rem;
   border: none;
 }
 .block5Name_list{
-width: 50px;
+width: 60px;
+padding-left: .4rem;
 font-size: 12px;
 }
 .block5Abbrev_list{
@@ -793,7 +806,8 @@ font-size: 12px;
   color: rgb(255, 94, 0);
   font-size: 12px;
 }
-.block5Graph_list{
+                  /*   i use display none for the landing page graph fir now i didn't know how to reduce the size on media screen */
+.block5Graph_list{display: none;
   width: 50px;
   font-size: 12px;
 }
@@ -801,7 +815,7 @@ font-size: 12px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50px;
+  width: 80px;
   font-size: 12px;
  
 }
@@ -841,6 +855,9 @@ text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.block6Img_div img{
+  width: 100%;
 }
 .block6Btn{
   width: 120px;
@@ -989,6 +1006,15 @@ margin: 1rem 0;
 .footerList_div{
   line-height: 2.5;
   text-align: center;
+  margin: 1rem 0;
+ 
+}
+.footerList_div_ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+.footerList_div_ul li:hover{
+  color:var(--secondary-color);
 }
 .termsOfPolicy_div{
   line-height: 2.5;

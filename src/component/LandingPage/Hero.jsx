@@ -212,8 +212,7 @@ export const Hero = () => {
         </div>
         <div className='footerList_div'>
           <h4>Company</h4>
-            <ul>
-              <li className="footerlist"></li>
+            <ul className='footerList_div_ul'>
               <li className="footerlist">About</li>
               <li className="footerlist">Careers</li>
               <li className="footerlist">Press</li>
