@@ -32,12 +32,16 @@ function App() {
           } />
         <Route path='/' element={<SidebarLayout />}>
          
-          <Route path='/withdraw' element={<Withdraw />} />
-          <Route path='/deposit' element={<Deposit />} />
-          <Route path='/buyminer' element={<Buyminer />} />
+         
+          
+        </Route>
+        <Route path='/withdraw' element={ <Withdraw /> } />
+         
+           <Route path='/deposit' element={<Deposit />} />
+           <Route path='/buyminer' element={<Buyminer />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/settings' element={<Settings />} />
-        </Route>
+
       </Routes>
     </BrowserRouter>
   );

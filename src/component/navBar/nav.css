@@ -1,75 +1,304 @@
-.navSection{
-    height: 60px;
-    position:fixed;
+/* Base styles */
+.navSection {
+    position: fixed;
     width: 100%;
-}
-.nav_on_scroll{
-    background-color: var(--blurdark-color);
-    z-index: 999;
-}
-.navClasses{
-    width: 100%;
-    height: 60px;
+    top: 0;
+    transition: background-color 0.3s;
+  }
+  
+  .nav_on_scroll {
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 99;
+  }
+  
+  .navClasses {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 99;
-}
-.logoDiv{
-    z-index: 99;
-}
-.navClasses ul{
-    width: 450px;
+    padding: 10px 20px;
+  }
+  
+  .logoDiv {
+    font-size: 30px;
+    color: var(--light-color);
+  }
+  .nav_link_section{
     display: flex;
-    float: left;
+    align-items: center;
     justify-content: space-around;
-    z-index: 99;
-   
-  
-}
-.navClasses li{
-    transition: all .6s ease-in-out;
-}
-.navClasses li:hover{
-    color: var(--primary-color);
-    z-index: 99;
-}
-.logIn_Btn_div{
-    width:250px;
+    width: 60%;
+  }
+  .navLinks {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    z-index: 99;
-}
-
-.signIn_btn{
-width: 100px;
-height: 40px;
-  border-radius: .4rem;
-  background-color: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--light-color);
-  margin-right: 1rem;
-  cursor: pointer;
-   z-index: 99;
+    gap: 20px;
+  }
   
-}
-.signIn_btn:hover{
-    background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
-    border: none;
-    
-}
-.signUp_btn {
+  .navLinks li {
+    color: var(--light-color);
+  }
+  .navLinks li:hover{
+    color: var(--primary-color);
+  }
+  .logIn_Btn_div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+.signIn_btn{
     width: 100px;
     height: 40px;
-    border-radius: 0.4rem;
-    color: var(--light-color);
-    background: linear-gradient(to left, var(--primary-color) 40%, var(--secondary-color) 100%);
+      border-radius: .4rem;
+      background-color: transparent;
+      border: 2px solid var(--primary-color);
+      color: var(--light-color);
+      margin-right: 1rem;
+      cursor: pointer;
+       z-index: 99;
+      
+    }
+    .signIn_btn:hover{
+        background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
+        border: none;
+        
+    }
+    .signUp_btn {
+        width: 100px;
+        height: 40px;
+        border-radius: 0.4rem;
+        color: var(--light-color);
+        background: linear-gradient(to left, var(--primary-color) 40%, var(--secondary-color) 100%);
+        cursor: pointer;
+        border: none;
+        z-index: 99;
+      }
+      
+      .signUp_btn:hover {
+        background: transparent;
+        border: 2px solid var(--primary-color);
+      }
+  
+
+  
+
+  /* Hamburger menu styles */
+  .nav_toggle {
+    width: 50px;
+    display: none;
+  }
+  
+  #checkbox_toggle {
+    display: none;
+  }
+  
+  .toggle_label {
+    position: relative;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.5s;
     z-index: 99;
   }
   
-  .signUp_btn:hover {
-    background: transparent;
-    border: 2px solid var(--primary-color);
+  .bars_label {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(176, 92, 255);
+    border-radius: 4px;
   }
+  
+  #bar2 {
+    transition-duration: 0.8s;
+  }
+  
+  #bar1,
+  #bar3 {
+    width: 70%;
+  }
+  
+  #checkbox_toggle:checked + .toggle_label .bars_label {
+    position: absolute;
+    transition-duration: 0.5s;
+  }
+  
+  #checkbox_toggle:checked + .toggle_label #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.5s;
+  }
+  
+  #checkbox_toggle:checked + .toggle_label #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+  }
+  
+  #checkbox_toggle:checked + .toggle_label #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.5s;
+  }
+  
+  #checkbox_toggle:checked + .toggle_label {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+  }
+  @media screen and (max-width:770px)  {
+    .navSection {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      transition: background-color 0.3s;
+    }
+    
+    .nav_on_scroll {
+      background-color: rgba(0, 0, 0, 0.8); 
+      z-index: 99;
+    }
+    
+    .navClasses {
+      display: flex;
+      justify-content: space-between ;
+      align-items: center;
+      padding: 10px 20px;
+    
+    }
+    
+    .logoDiv {
+      font-size: 20px;
+      color: var(--light-color);
+    }
+    .nav_link_section{
+      display: none;
+      align-items: center;
+      justify-content: space-around;
+      width: 60%;
+    }
+    .navLinks {
+      list-style: none;
+      display: none;
+      gap: 20px;
+
+    }
+    
+    .navLinks li {
+      color: var(--light-color);
+    }
+    .navLinks li:hover{
+      color: var(--primary-color);
+    }
+    .logIn_Btn_div {
+      display: none;
+      gap: 10px;
+    }
+    
+    
+  .signIn_btn{
+      width: 100px;
+      height: 40px;
+        border-radius: .4rem;
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+        color: var(--light-color);
+        margin-right: 1rem;
+        cursor: pointer;
+         z-index: 99;
+        
+      }
+      .signIn_btn:hover{
+          background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
+          border: none;
+          
+      }
+      .signUp_btn {
+          width: 100px;
+          height: 40px;
+          border-radius: 0.4rem;
+          color: var(--light-color);
+          background: linear-gradient(to left, var(--primary-color) 40%, var(--secondary-color) 100%);
+          cursor: pointer;
+          border: none;
+          z-index: 99;
+        }
+        
+        .signUp_btn:hover {
+          background: transparent;
+          border: 2px solid var(--primary-color);
+        }
+    
+  
+    
+  
+    /* Hamburger menu styles */
+    .nav_toggle {
+      width: 40px;
+      display: block;
+    }
+    
+    #checkbox_toggle {
+      display: none;
+    }
+    
+    .toggle_label {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition-duration: 0.5s;
+      z-index: 99;
+    }
+    
+    .bars_label {
+      width: 100%;
+      height: 4px;
+      background-color: rgb(176, 92, 255);
+      border-radius: 4px;
+    }
+    
+    #bar2 {
+      transition-duration: 0.8s;
+    }
+    
+    #bar1,
+    #bar3 {
+      width: 70%;
+    }
+    
+    #checkbox_toggle:checked + .toggle_label .bars_label {
+      position: absolute;
+      transition-duration: 0.5s;
+    }
+    
+    #checkbox_toggle:checked + .toggle_label #bar2 {
+      transform: scaleX(0);
+      transition-duration: 0.5s;
+    }
+    
+    #checkbox_toggle:checked + .toggle_label #bar1 {
+      width: 100%;
+      transform: rotate(45deg);
+      transition-duration: 0.5s;
+    }
+    
+    #checkbox_toggle:checked + .toggle_label #bar3 {
+      width: 100%;
+      transform: rotate(-45deg);
+      transition-duration: 0.5s;
+    }
+    
+    #checkbox_toggle:checked + .toggle_label {
+      transition-duration: 0.5s;
+      transform: rotate(180deg);
+    }
+  
+}

@@ -208,7 +208,7 @@ export const Hero = () => {
           <div className='footerInput_div'>
             <input type="text" placeholder='Email Address'/><FaArrowRight />
           </div>
-          <span>© 2021 GPD Holdings, LLC FINCEN MSB</span>
+          <span className='footer_copyright'>© 2021 GPD Holdings, LLC FINCEN MSB</span>
         </div>
         <div className='footerList_div'>
           <h4>Company</h4>
@@ -234,6 +234,7 @@ export const Hero = () => {
         </div>
         </section>
         <div className='footerGradientBackground'><img src="https://i.postimg.cc/Bvkq2SXD/bg-gradient-img-1.png" alt="" /></div>
+        <span className='mobile_footer_copyright'>© 2021 GPD Holdings, LLC FINCEN MSB</span>
       </footer>
 
   
