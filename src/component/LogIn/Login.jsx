@@ -7,9 +7,9 @@ export const Login = () => {
     <section className="loginSection_div">
         <div className="leftLoginSection">
             <div className="LoginGradientBackground"><img src="https://i.postimg.cc/GhkYmpX4/Group-4.png" alt="" /></div>
-            <div className="enviroGradientBackground"><img src="https://i.postimg.cc/fbkJmWfj/Enviro.png" alt="" /></div>
-            <div className="HostingGradientBackground"><img src="https://i.postimg.cc/FsQd84hN/Hosting.png" alt="" /></div>
-            <div className="bubbleGradientBackground"><img src="https://i.postimg.cc/j5Pq4DwN/Bubble.png" alt="" /></div>
+            <div className="LoginenviroGradientBackground"><img src="https://i.postimg.cc/fbkJmWfj/Enviro.png" alt="" /></div>
+            <div className="LoginHostingGradientBackground"><img src="https://i.postimg.cc/FsQd84hN/Hosting.png" alt="" /></div>
+            <div className="LoginbubbleGradientBackground"><img src="https://i.postimg.cc/j5Pq4DwN/Bubble.png" alt="" /></div>
         </div>
           <div className="rightLoginSection">
            <div className="formFieldContainer">

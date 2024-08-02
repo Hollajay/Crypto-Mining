@@ -7,6 +7,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 import ChartHero from './heroChart/ChartHero';
 
 
+
 export const Hero = () => {
          
       return (
@@ -18,6 +19,7 @@ export const Hero = () => {
     
       <div className='headerGradientBackground'><img src="https://i.postimg.cc/FKQpzcxJ/bg-img.png" alt="" /></div>
       <Nav/>
+     
       <header>
         <div className='headerText'>
           <h1>We make crypto <br />clear and simple </h1>

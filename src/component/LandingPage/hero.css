@@ -34,7 +34,7 @@ header .headerText h1{
 }
 .headerBtn{
   margin: 3rem 0;
-  z-index: 99;
+  z-index: 9;
 }
 .headerBtn .getStartedBtn{
   width: 120px;
@@ -44,6 +44,7 @@ header .headerText h1{
  background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
  cursor: pointer;
  border: none;
+ z-index: 9;
 
 }
 .headerBtn .getStartedBtn:hover{
@@ -54,7 +55,7 @@ height: 40px;
   border: 2px solid var(--primary-color);
   color: var(--light-color);
   cursor: pointer;
-   z-index: 99;
+   z-index: 9;
 }
 
 
@@ -508,7 +509,10 @@ margin: 1rem 0;
  object-fit: contain;
  position: absolute;
  z-index: 0;
- display: none;
+ object-fit:cover;
+ overflow: hidden;
+ background-size: cover;
+
 }
 .headerGradientBackground img{
   width: 100%;
@@ -527,7 +531,7 @@ header .headerText h1{
 }
 .headerBtn{
   margin: 3rem 0;
-  z-index: 99;
+  z-index: 9;
 }
 .headerBtn .getStartedBtn{
   width: 120px;
@@ -547,7 +551,7 @@ height: 40px;
   border: 2px solid var(--primary-color);
   color: var(--light-color);
   cursor: pointer;
-   z-index: 99;
+   z-index: 9;
 }
 
 
@@ -560,11 +564,13 @@ height: 40px;
                                     /* star gradient absolute positioning  */
 .starsGradientImages{
   position: absolute;
-  bottom: 1rem;
-  left: 2rem;
+  bottom:15rem;
+  left: 1.5rem;
   display: flex;
   align-items: center;
-  flex-direction: column;
+ 
+ ;
+
 }
 .block2_Divs{
   width: 80%;
@@ -575,6 +581,7 @@ height: 40px;
   align-items: center;
   flex-direction: column;
   gap: 30px;
+
 }
 .block2Div{
   width: 350px;
@@ -614,12 +621,13 @@ flex-direction: column;
  width: 100%;
  position: relative;
  height: 100%;
+ z-index: 9;
 }
                        /* star background  styling  */
 .starBackground{
   position: absolute;
-  right: 17rem;
-  bottom: 6rem;
+  right:.2rem;
+  bottom: 6.5rem;
 }
 .block3_div{
 width: 100%;
@@ -655,7 +663,7 @@ height: 40px;
   border: 2px solid var(--primary-color);
   color: var(--light-color);
   cursor: pointer;
-   z-index: 99;
+   z-index: 9;
 }
 
 
@@ -737,6 +745,8 @@ text-align: center;
 
 .block5Section{
   width: 100%;
+  position: relative ;
+  z-index: 9;
 
 }
 .block5Div_container{
@@ -745,6 +755,7 @@ text-align: center;
  height: 100%; 
 display: block;
 padding: .5rem;
+z-index: 9;
 
 }
 .block5TextContent{
@@ -752,6 +763,7 @@ padding: .5rem;
 }
 .block5TextContent h1{
   font-size: 40px;
+  z-index: 9;
 }
 .block5TextContentP_tag{
   color: var(--darkpurple-color);
@@ -823,12 +835,15 @@ font-size: 12px;
                           /* block6 section  */
 
 .block6Section{
+  position: relative;
+  z-index: 9;
 width: 100%;
 padding: .5rem;
 }
 .block6Div_container{
   display: block;
   width: 100%;
+  z-index: 9;
 
 
 }
@@ -891,10 +906,10 @@ height: 40px;
 .gradientBackground{
   position: absolute;
   right: 0;
-  bottom: 15%;
-  display: none;
+  bottom: 50%;
+  z-index: 0;
+  display: none ;
 
-z-index: 0;
 }
 
                                         /* block 7 section */
@@ -951,6 +966,7 @@ margin: 1rem 0;
   width: 100%;
   color: lightgray ;
   position: relative;
+  z-index: 9;
 }
 .footerSection{
   width: 100%;
@@ -960,6 +976,7 @@ margin: 1rem 0;
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  z-index: 9;
 }
 .footerTextContent_div{
   width: 350px;
@@ -1022,21 +1039,29 @@ margin: 1rem 0;
 }
 .footerGradientBackground{
   position: absolute;
+  width: 100%;
   left: 0;
-  bottom: 0;
-  display: none;
+  bottom:0;
+  overflow: hidden;
+   z-index: 0;
+}
+.footerGradientBackground img{
+  width: 100%;
 }
 .sideGradientBackground{
   position: absolute;
   right: 0;
-  bottom: 38%;
-  display: none;
+  bottom: 30%;
+  z-index: 0;
+
+
 }
 .esclipseLineBackground{
   position: absolute;
   right: 0;
-  bottom: 48%; 
-  display: none;
+  bottom: 47%; 
+  z-index: 0;
+
 }
 }
 
