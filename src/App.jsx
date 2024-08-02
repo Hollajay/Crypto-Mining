@@ -11,6 +11,7 @@ import { Buyminer } from '../pages/Buy miner/Buyminer';
 import { Profile } from '../pages/Profile/Profile';
 import { Settings } from '../pages/Settings/Settings';
 import { Outlet } from 'react-router-dom';
+import AdminHome from './component/Admin/AdminHome';
 
 const SidebarLayout = () => (
   <Sidebar>
@@ -41,6 +42,7 @@ function App() {
            <Route path='/buyminer' element={<Buyminer />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/settings' element={<Settings />} />
+          <Route path="/admin/*" element={<AdminHome />} />
 
       </Routes>
     </BrowserRouter>
