@@ -73,7 +73,7 @@ height: 40px;
   flex-direction: column;
 }
 .block2_Divs{
-  width: 80%;
+  width: 90%;
   height: 400px;
   margin: 0 auto;
   display: flex;
@@ -346,6 +346,7 @@ height: 40px;
   justify-content: center;
   align-content: center;
   z-index: 9;
+  overflow: hidden;
 }
 
 .gradientBackground{
@@ -472,6 +473,10 @@ margin: 1rem 0;
   position: absolute;
   left: 0;
   bottom: 0;
+  overflow: hidden;
+}
+.footerGradientBackground img {
+  overflow: hidden;
 }
 .sideGradientBackground{
   position: absolute;
@@ -488,7 +493,1021 @@ margin: 1rem 0;
   height: 40px;
   display: none;
 }
-@media screen and (max-width:780px) {
+
+
+@media only screen and (max-width: 768px) {
+  .landingPageContainer{
+    width: 100%;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    position: relative;
+  
+  }
+  .headerSection{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 50;
+  }
+  .headerGradientBackground{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   position: absolute;
+   z-index: 0;
+   object-fit:cover;
+   overflow: hidden;
+   background-size: cover;
+  
+  }
+  .headerGradientBackground img{
+    width: 100%;
+  
+  }
+  .headerSection header{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+  }
+  header .headerText h1{
+    font-size: 60px;
+  }
+  .headerBtn{
+    margin: 3rem 0;
+    z-index: 9;
+  }
+  .headerBtn .getStartedBtn{
+    width: 150px;
+    height: 50px;
+   border-radius: .4rem;
+   color: var(--light-color);
+   background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
+   cursor: pointer;
+   border: none;
+  
+  }
+  .headerBtn .getStartedBtn:hover{
+    width: 150px;
+  height: 50px;
+    border-radius: .4rem;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+     z-index: 9;
+  }
+  
+  
+  /* block2 styling  */
+  .Block2Section{
+    width: 100%;
+    position: relative;
+    height: 100%;
+  }                                     
+                                      /* star gradient absolute positioning  */
+  .starsGradientImages{
+    position: absolute;
+    bottom:15rem;
+    left: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .block2_Divs{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 1rem;
+  
+  }
+  .block2Div{
+    width: 550px;
+    height: 400px;
+   background: #1A1B23;
+   border-radius: 2.4rem;
+   padding: .7rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  flex-direction: column;
+  }
+  .block2Img_div img{
+    width: 100px;
+  }
+  
+  .block2Text{
+    text-align: center;
+    color: #898CA9;
+    font-size: 18px;
+  }
+  .block2Text h1{
+   color: var(--light-color);
+   margin: 1rem 0;
+  }
+  .block2Link{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primarypurple-color);
+  }
+  
+   
+        /* block 3 section */
+  
+  .block3Section{
+   width: 100%;
+   position: relative;
+   height: 100%;
+   z-index: 9;
+  }
+                         /* star background  styling  */
+  .starBackground{
+    position: absolute;
+    right:.2rem;
+    bottom: 6.5rem;
+  }
+  .block3_div{
+  width: 100%;
+  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem 0 0rem 0;
+  }
+  .block3Text h1{
+    font-size: 50px;
+  }
+  .block3Text p{
+    color: #898CA9;
+    margin: 1rem 0;
+  }
+  .block3Btn{
+    width: 150px;
+    height: 50px;
+   border-radius: .4rem;
+   color: var(--light-color);
+   background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
+   cursor: pointer;
+   border: none;
+  }
+  .block3Btn:hover{
+    width: 150px;
+  height: 50px;
+    border-radius: .4rem;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+     z-index: 9;
+  }
+  
+  
+         /* block 4 section */
+  
+  
+  .block4Section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  
+  }
+  .block4div_container{
+  width: 100%;
+  height: 100%;
+  
+  }
+  .block4Grid_div{
+    display: block;
+     height: 100%;
+  }
+  .block4LeftGrid_div{
+    width: 100%;
+    height: 100%;
+  
+    top: 0;
+  
+  }
+  .block4LeftGrid_div img{
+    width: 100%;
+  height: 100%;
+   
+  }
+  .block4RightGrid_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    padding-right: 0rem;
+    position:absolute;
+    top: 0rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+  }
+  .block4RightGridContent h1{
+  font-size: 60px;
+  text-align: center;
+  }
+  
+  .block4RightGridContent p{
+    color: var(--darkpurple-color);
+    margin: 1.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .block4Btn_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .block4Btn{
+    width: 150px;
+    height: 50px;
+    border-radius: .4rem;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+  }
+  .block4Btn:hover{
+    background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
+    border: none;
+  }
+  
+                     /* block5 Section */
+  
+  .block5Section{
+    width: 100%;
+    position: relative ;
+    z-index: 9;
+  
+  }
+  .block5Div_container{
+   width: 100%;
+   margin: 0 auto;
+   height: 100%; 
+  display: block;
+  padding: .5rem;
+  z-index: 9;
+  
+  }
+  .block5TextContent{
+    text-align: center;
+  }
+  .block5TextContent h1{
+    font-size: 50px;
+    z-index: 9;
+  }
+  .block5TextContentP_tag{
+    color: var(--darkpurple-color);
+    margin: .5rem 0;
+  }
+  .block5Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var( --primarypurple-color);
+  }
+            /* table content  */
+  .block5TableContent{
+   width: 100%;
+   margin: 4rem auto;
+  ;
+   background:var(--blurdark-color);
+  border-radius: 2rem;
+  padding: 0rem;
+  }
+  .block5TableLists{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--darkpurple-color);
+  }
+  .block5TableLists:last-child{
+    border: none;
+  }
+  .block5Name_list{
+  width: 80px;
+  padding-left: .4rem;
+  font-size: 17px;
+  }
+  .block5Abbrev_list{
+    color: var( --primarypurple-color);
+    width: 40px;
+    font-size: 17px;
+  }
+  .block5Price_list{
+    width: 60px;
+    font-size: 17px;
+  }
+  .block5Percent_list{
+    color: var(--systemgreen-color);
+    width: 50px;
+    font-size: 17px;
+  }
+  .block5Percent_decrease{
+    color: rgb(255, 94, 0);
+    font-size: 17px;
+  }
+                    /*   i use display none for the landing page graph fir now i didn't know how to reduce the size on media screen */
+  .block5Graph_list{
+   
+    width: 300px;
+    font-size: 15px;
+  }
+  .block5Trade_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 110px;
+    font-size: 17px;
+   
+  }
+  
+                            /* block6 section  */
+  
+  .block6Section{
+    position: relative;
+    z-index: 9;
+  width: 100%;
+  padding: .5rem;
+  }
+  .block6Div_container{
+    display: block;
+    width: 100%;
+    z-index: 9;
+  
+  
+  }
+  .block6TextContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0rem; 
+  }
+  .block6TextContent h1{
+  font-size: 50px;
+  text-align: center;
+  }
+  .block6TextContent p{
+    color: var(--darkpurple-color);
+    margin: 2rem 0;
+    text-align: center;
+    width: 80%;
+  }
+  .block6Img_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .block6Img_div img{
+    width: 100%;
+  }
+  .block6Btn{
+    width: 150px;
+    height: 50px;
+   border-radius: .4rem;
+   color: var(--light-color);
+   background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
+   cursor: pointer;
+   border: none;
+   z-index: 99;
+  
+  }
+  .block6Btn:hover{
+    width: 150px;
+  height: 50px;
+    border-radius: .4rem;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+     z-index: 99;
+   
+  }
+  .block6Img_div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 9;
+  }
+  
+  .gradientBackground{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    z-index: 0;
+    display: none ;
+  
+  }
+  
+                                          /* block 7 section */
+  .block7Section{
+    width: 100%;
+  }    
+  .block7Div_container{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }  
+  .block7Text_div h1{
+    font-size: 40px;
+    text-align: center;
+  }  
+  .block7Text_div  .unsubscribe_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }       
+  .unsubscribe_div p{
+  color: var(--darkpurple-color);
+  margin: 1rem 0;
+  }   
+  .block7Input_div{
+    margin: 1rem 0;
+    border: 2px solid var(--primary-color);
+    border-radius: .7rem;
+    width: 270px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }   
+  .block7Input_div input{
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 99;
+    color: var(--light-color);
+    font-size: 15px;
+  }             
+  
+                              /* footer container  */
+  .footer_container{
+    width: 100%;
+    color: lightgray ;
+    position: relative;
+    z-index: 9;
+  }
+  .footerSection{
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 9;
+    padding: .3rem;
+  }
+  .footerTextContent_div{
+    width: 350px;
+    text-align: center;
+    z-index: 99;
+    
+  
+  }
+  .footerText p{
+  margin: 1rem 0;
+  
+  }
+  .footerInput_div{
+    margin: 1rem auto;
+    border: 2px solid var(--primary-color);
+    border-radius: .7rem;
+    width: 270px;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+  }
+  .footerInput_div input{
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--light-color);
+    font-size: 15px;
+  }  
+  .footer_copyright{
+    display: none;
+  }
+  .mobile_footer_copyright{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerList_div{
+    line-height: 2.5;
+    text-align: center;
+    margin: 1rem 0;
+   
+  }
+  .footerList_div_ul{
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+  .footerList_div_ul li:hover{
+    color:var(--secondary-color);
+  }
+  .termsOfPolicy_div{
+    line-height: 2.5;
+    text-align: center;
+  }
+  .footerGradientBackground{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom:0;
+    overflow: hidden;
+     z-index: 0;
+  }
+  .footerGradientBackground img{
+    width: 100%;
+  }
+  .sideGradientBackground{
+    position: absolute;
+    right: 0;
+    bottom: 30%;
+    z-index: 0;
+  
+  
+  }
+  .esclipseLineBackground{
+    position: absolute;
+    right: 0;
+    bottom: 47%; 
+    z-index: 0;
+  
+  }
+  }
+
+
+
+
+
+
+
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1024px) {
+    
+.landingPageContainer{
+  width: 100%;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  position: relative;
+}
+.Block2Section{
+  width: 100%;
+  position: relative;
+  height: 100%;
+  z-index: 9;
+}                                     
+                                    /* star gradient absolute positioning  */
+.starsGradientImages{
+  position: absolute;
+  bottom:15rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+
+}
+.headerSection{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 50;
+}
+.headerGradientBackground{
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
+ position: absolute;
+ z-index: 0;
+ object-fit:cover;
+ overflow: hidden;
+ background-size: cover;
+
+}
+.block2_Divs{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 30px;
+
+}
+.block2Div{
+  width: 300px;
+  height: 300px;
+ background: #1A1B23;
+ border-radius: 2.4rem;
+ padding: 1rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+.block2Img_div img{
+  width: 60px;
+}
+
+.block2Text{
+  text-align: center;
+  color: #898CA9;
+}
+.block2Text h1{
+ color: var(--light-color);
+ margin: 1rem 0;
+}
+.block2Link{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primarypurple-color);
+}
+.block3Section{
+  width: 100%;
+  position: relative;
+  height: 100%;
+  z-index: 9;
+ }
+                        /* star background  styling  */
+ .starBackground{
+   position: absolute;
+   right:.2rem;
+   bottom: 6.5rem;
+ }
+ .block3_div{
+ width: 100%;
+ height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   margin: 6rem 0 0rem 0;
+ }
+ .block3Text h1{
+   font-size: 45px;
+ }
+ .block3Text p{
+   color: #898CA9;
+   margin: 1.5rem 0;
+ }
+ .block3Btn{
+   width: 120px;
+   height: 40px;
+  border-radius: .4rem;
+  color: var(--light-color);
+  background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
+  cursor: pointer;
+  border: none;
+ }
+ .block3Btn:hover{
+   width: 120px;
+ height: 40px;
+   border-radius: .4rem;
+   background: transparent;
+   border: 2px solid var(--primary-color);
+   color: var(--light-color);
+   cursor: pointer;
+    z-index: 9;
+ }
+ 
+.block5Section{
+  width: 100%;
+  position: relative ;
+  z-index: 9;
+
+}
+.block5Div_container{
+ width: 97%;
+ margin: 0 auto;
+ height: 100%; 
+display: block;
+padding: .5rem;
+z-index: 9;
+
+}
+.block5TextContent{
+  text-align: center;
+}
+.block5TextContent h1{
+  font-size: 40px;
+  z-index: 9;
+}
+.block5TextContentP_tag{
+  color: var(--darkpurple-color);
+  margin: .5rem 0;
+}
+.block5Link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var( --primarypurple-color);
+}
+          /* table content  */
+.block5TableContent{
+ width: 100%;
+ margin: 3rem auto;
+;
+ background:var(--blurdark-color);
+border-radius: 2rem;
+padding: 0rem;
+}
+.block5TableLists{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--darkpurple-color);
+}
+.block5TableLists:last-child{
+  border: none;
+}
+.block5Name_list{
+width: 100px;
+padding-left: .4rem;
+font-size: 20px;
+}
+.block5Abbrev_list{
+  color: var( --primarypurple-color);
+  width: 70px;
+  font-size: 20px;
+}
+.block5Price_list{
+  width: 70px;
+  font-size: 20px;
+}
+.block5Percent_list{
+  color: var(--systemgreen-color);
+  width: 70px;
+  font-size: 20px;
+}
+.block5Percent_decrease{
+  color: rgb(255, 94, 0);
+  font-size: 20px;
+  width: 70px;
+}
+                  /*   i use display none for the landing page graph fir now i didn't know how to reduce the size on media screen */
+.block5Graph_list{
+ 
+  width: 300px;
+  font-size: 20px;
+}
+.block5Trade_list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 120px;
+  font-size: 20px;
+ 
+}
+.block6Section{
+  width: 100%;
+  }
+  .block6Div_container{
+    display: flex;
+    width: 100%;
+  
+  
+  }
+  .block6TextContent{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem; 
+  }
+  .block6TextContent h1{
+  font-size: 50px;
+  }
+  .block6TextContent p{
+    color: var(--darkpurple-color);
+    margin: 1rem 0;
+  }
+  .block6Btn{
+    width: 120px;
+    height: 40px;
+   border-radius: .4rem;
+   color: var(--light-color);
+   background: linear-gradient(to left, var(--primary-color) 40%,var(--secondary-color)100%);
+   cursor: pointer;
+   border: none;
+   z-index: 99;
+  }
+  .block6Btn:hover{
+    width: 120px;
+  height: 40px;
+    border-radius: .4rem;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+     z-index: 99;
+   
+  }
+  .block6Img_div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 9;
+  }
+  
+  .gradientBackground{
+    position: absolute;
+    right: 0;
+   top: 80%;
+  
+  z-index: 0;
+  }
+  .block7Section{
+    width: 100%;
+    z-index: 90;
+  }    
+  .block7Div_container{
+    margin: 0 auto;
+    width: 80%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 90;
+   
+  }  
+  .block7Text_div h1{
+    font-size: 50px;
+  }  
+  .block7Text_div  .unsubscribe_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }       
+  .unsubscribe_div p{
+  color: var(--darkpurple-color);
+  margin: 1rem 0;
+  }   
+  .block7Input_div{
+    margin: 1rem 0;
+    border: 2px solid var(--primary-color);
+    border-radius: .7rem;
+    width: 270px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+  }   
+  .block7Input_div input{
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 99;
+    color: var(--light-color);
+    font-size: 15px;
+  
+  }             
+  
+                              /* footer container  */
+  .footer_container{
+    width: 100%;
+    color: lightgray ;
+    position: relative;
+    z-index: 99;
+  }
+  .footerSection{
+    width: 90%;
+    height: 350px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .footerTextContent_div{
+    width: 350px;
+    text-align: left;
+    z-index: 99;
+    
+  
+  }
+  .footerText p{
+  margin: 1rem 0;
+  }
+  .footerInput_div{
+    margin: 1rem 0;
+    border: 2px solid var(--primary-color);
+    border-radius: .7rem;
+    width: 270px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+  }
+  .footerInput_div input{
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--light-color);
+    font-size: 15px;
+    z-index: 9;
+  }  
+  .footerList_div{
+    line-height: 2.5;
+    text-align: left;
+    z-index: 9;
+  }
+  
+  .footerlist:hover{
+    color:var(--primary-color);
+    text-decoration:underline ;
+  }
+  .termsOfPolicy_div{
+    line-height: 2.5;
+    text-align: left;
+  }
+  .footerGradientBackground{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .footerGradientBackground img{
+  overflow: hidden;
+  width: 100%;
+  }
+
+  .sideGradientBackground{
+    position: absolute;
+    right: 0;
+    bottom: 38%;
+  }
+  .esclipseLineBackground{
+    position: absolute;
+    right: 0;
+    bottom: 48%; 
+  }
+  .mobile_footer_copyright{
+    width: 100%;
+    height: 40px;
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
   
 .landingPageContainer{
   width: 100%;
@@ -501,7 +1520,7 @@ margin: 1rem 0;
   width: 100%;
   height: 100%;
   position: relative;
-  z-index: 99;
+  z-index: 50;
 }
 .headerGradientBackground{
  width: 100%;
@@ -520,7 +1539,6 @@ margin: 1rem 0;
 }
 .headerSection header{
    width: 100%;
- 
    display: flex;
    align-items: center;
    justify-content: center;
@@ -741,7 +1759,7 @@ text-align: center;
   border: none;
 }
 
-                   /* block45 Section */
+                   /* block5 Section */
 
 .block5Section{
   width: 100%;

@@ -42,7 +42,7 @@ function App() {
            <Route path='/buyminer' element={<Buyminer />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/settings' element={<Settings />} />
-          <Route path="/admin/*" element={<AdminHome />} />
+          <Route path="/admin" element={<AdminHome />} />
 
       </Routes>
     </BrowserRouter>

@@ -84,7 +84,7 @@ export const Sidebar = () => {
         }
          
       </section>
-   <Withdraw/>
+   <Dashboard/>
       </div>
     </div>
   )
