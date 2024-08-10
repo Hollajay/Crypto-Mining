@@ -10,8 +10,8 @@ import { RiArrowLeftRightFill } from "react-icons/ri";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { Header } from '../DashboardHeader/Header';
-import { Dashboard } from '../../pages/Dashboard/Dashboard';
-import { Withdraw } from '../../pages/Withdraw/Withdraw';
+
+import AdminHome from '../../src/component/Admin/AdminHome';
 
 
 export const Sidebar = () => {
@@ -84,7 +84,9 @@ export const Sidebar = () => {
         }
          
       </section>
-   <Dashboard/>
+   <AdminHome/>
+
+   
       </div>
     </div>
   )

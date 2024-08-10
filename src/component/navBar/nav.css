@@ -39,13 +39,17 @@
     display: flex;
     gap: 20px;
   }
+  .nav_link{
+    color: var(--light-color);
+  }
+  .nav_link:hover{
+    color: var(--primary-color);
+  }
   
   .navLinks li {
     color: var(--light-color);
   }
-  .navLinks li:hover{
-    color: var(--primary-color);
-  }
+
   .logIn_Btn_div {
     display: flex;
     gap: 10px;

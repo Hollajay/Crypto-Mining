@@ -228,9 +228,9 @@ export const Hero = () => {
            <ul>
             <li className="termsPolicyList" data-aos="fade-up">CoinFlip Privacy Policy</li>
             <li className="termsPolicyList" data-aos="fade-up">CoinFlip Biometrics Privacy Policy</li>
-            <li className="termsPolicyList" data-aos="fade-up">CoinFlip Financial Privacy Notice</li>
-            <li className="termsPolicyList" data-aos="fade-up">CoinFlip Terms of Service</li>
-            <li className="termsPolicyList" data-aos="fade-up">CoinFlip Trade Desk Terms of Service</li>
+            <li className="termsPolicyList" >CoinFlip Financial Privacy Notice</li>
+            <li className="termsPolicyList" >CoinFlip Terms of Service</li>
+            <li className="termsPolicyList" >CoinFlip Trade Desk Terms of Service</li>
            </ul>
         </div>
         </section>

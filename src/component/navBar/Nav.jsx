@@ -45,11 +45,11 @@ export const Nav = () => {
         </div>
         <section className={`nav_link_section ${showMenu ? "show-menu" : ""}`}>
           <ul className="navLinks">
-            <li onClick={closeMenuOnMobile}>Buy & Sell</li>
-            <li onClick={closeMenuOnMobile}><Link to="/growth">Growth</Link></li>
-            <li onClick={closeMenuOnMobile}><Link to="/markets">Markets</Link></li>
-            <li onClick={closeMenuOnMobile}><Link to="/business">Business</Link></li>
-            <li onClick={closeMenuOnMobile}><Link to="/supports">Supports</Link></li>
+            <li onClick={closeMenuOnMobile}><Link className='nav_link' to="/buy"> Buy & Sell</Link></li>
+            <li onClick={closeMenuOnMobile}><Link className='nav_link' to="/growth">Growth</Link></li>
+            <li onClick={closeMenuOnMobile}><Link className='nav_link'  to="/markets">Markets</Link></li>
+            <li onClick={closeMenuOnMobile}><Link className='nav_link'  to="/business">Business</Link></li>
+            <li onClick={closeMenuOnMobile}><Link className='nav_link'  to="/supports">Supports</Link></li>
           </ul>
           <div className="logIn_Btn_div">
             <Link to="/login">
